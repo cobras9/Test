@@ -24,3 +24,25 @@ proguard/
 
 # Log Files
 *.log
+/Android MMWallet/HockeySDK-Android-3.0.1/HockeySDK-Android-3.0.1.iml
+/.idea/compiler.xml
+/.idea/copyright/profiles_settings.xml
+/.idea/encodings.xml
+/.idea/gradle.xml
+/.idea/libraries/android_support_v4.xml
+/.idea/libraries/appcompat_v7_19_1_0.xml
+/.idea/libraries/asn1.xml
+/.idea/libraries/hockeysdk_android.xml
+/.idea/libraries/libVmf.xml
+/.idea/libraries/libVPI.xml
+/.idea/libraries/magtek_scra.xml
+/.idea/libraries/rhombuslib_master.xml
+/.idea/libraries/support_v13_21_0_3.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/.name
+/.idea/scopes/scope_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/MMWalletAndroid/MMWalletAndroid.iml
+/MWallet.iml
