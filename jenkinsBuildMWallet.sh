@@ -65,3 +65,5 @@ do
   #sed '/<!--/,/-->/d' $file > tempfile.tmp && mv tempfile.tmp $file
   echo "Modified: " $file
 done
+
+
