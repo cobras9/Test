@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/Item_Settings"
+          android:icon="@drawable/context_menu"
+          android:title=""
+          android:showAsAction="ifRoom|withText"
+          android:orderInCategory="@string/scan_bar_image_order"
+          >
+        <menu>
+            <item
+                android:id="@+id/Item_logout"
+                android:showAsAction="ifRoom"
+                android:title="@string/LOGOUT"
+                />
+            <item
+                android:id="@+id/Item_About"
+                android:showAsAction="ifRoom"
+                android:title="@string/ABOUT"
+                />
+        </menu>
+    </item>
+
+</menu>

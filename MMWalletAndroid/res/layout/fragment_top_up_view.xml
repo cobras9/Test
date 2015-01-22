@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/APP_MAIN_COLOR">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:background="@drawable/background_send_money_linear">
+                <EditText
+                    android:id="@+id/Fragment_TopUp_EditText_Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_Amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Amount"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_send_money_linear">
+                <EditText
+                    android:id="@+id/Fragment_TopUp_EditText_AccountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_AccountId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/DIFFERENT_PHONE_NUMBER"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_send_money_linear">
+
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_SpinnerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Choose Network"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_Sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:layout_below="@+id/Fragment_TopUp_TextView_SpinnerTitle"
+                    android:background="@color/TAB_SEP_TOP"/>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Fragment_TopUp_Spinner"
+                    android:layout_below="@+id/Fragment_TopUp_TextView_Sep"
+                    android:gravity="left"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_send_money_linear">
+                <EditText
+                    android:id="@+id/Fragment_TopUp_EditText_CreditCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_CreditCardNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/CREDIT_CARD_NUMBER"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/background_send_money_linear">
+                <EditText
+                    android:id="@+id/Fragment_TopUp_EditText_CreditCardExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Fragment_TopUp_TextView_CreditCardExpiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="@string/CREDIT_CARD_EXPIRY"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:background="@android:color/transparent"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/Fragment_TopUp_Button_Pay"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_height="@dimen/button_height"
+                android:text="@string/SendMoneyButton"
+                android:textColor="@color/registration_register_button_text_color"
+                android:background="@drawable/error_button_background"/>
+
+            <ProgressBar
+                android:id="@+id/Fragment_TopUp_Progressbar"
+                android:layout_width="@dimen/progressbar_width"
+                android:layout_height="@dimen/progressbar_height"
+                android:visibility="gone"
+                android:layout_gravity="center"
+
+                />
+            <TextView android:id="@+id/Fragment_TopUp_TextView_Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/server_response_text_size"
+                android:maxLines="10"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/TEXT_COLOR"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

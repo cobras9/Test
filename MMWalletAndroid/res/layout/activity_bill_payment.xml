@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dstv"
+    tools:context="com.mobilisDemo.android.nfc.activities.BillPaymentActivity">
+
+    <fragment
+        android:id="@+id/fraRegServices"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        class="com.mobilis.android.nfc.fragments.BillPaymentFragment" ></fragment>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+MainScreen
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--
+ Declare the contents of this Android application.  The namespace
+     attribute brings in the Android platform namespace, and the package
+     supplies a unique name for the application.  When writing your
+     own application, the package name must be changed from "com.example.*"
+     to come from a domain that you own or have control over.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobilis.android.nfc"
+    android:versionCode="@integer/APP_VERSION_CODE"
+    android:versionName="@string/APP_VERSION_INTERNAL" >
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <!-- What we are allowing the phone to use -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <!--<uses-permission android:name="android.permission.GET_TASKS" />-->
+    <!--<uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.acc" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <!--<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />-->
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+
+    <!-- Donut-specific flags which allow us to run on any dpi screens. -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"
+        android:resizeable="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Theme.MMWallet" > <!-- android:debuggable="true" -->
+
+
+        <!-- SMS Receiver -->
+        <!--
+             <receiver android:name="com.mobilis.android.nfc.activities.SMSReceiver">
+			<intent-filter>
+			<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+        -->
+
+
+        <!--
+         NFC MifareClassic Activity 
+ 		<activity android:name="com.mobilis.android.nfc.activities.MifareClassicReaderActivity" android:screenOrientation="portrait"
+		    android:launchMode="singleTop" android:theme="@android:style/Theme.Black"> 
+		    <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+             	<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.nfc.action.TECH_DISCOVERED" android:resource="@xml/nfc_tech_filter"/>
+  	  	</activity>
+        -->
+
+        <!--<receiver-->
+        <!--android:name=".util.NetworkChangeReceiver"-->
+        <!--android:label="NetworkChangeReceiver">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+        <!--<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!-- Services -->
+        <!--<service android:name="com.mobilis.android.nfc.widget.BalanceUpdateService" />-->
+        <service
+            android:name="com.mobilis.android.nfc.widget.MobilisApduService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE" >
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apduservice" />
+        </service>
+        <!-- Widget -->
+
+
+        <!-- Launcher Activity -->
+        <activity
+            android:name="com.mobilis.android.nfc.activities.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- NFC Activity -->
+        <activity
+            android:name="com.mobilis.android.nfc.activities.NDEFRouterActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.action.NDEF_DISCOVERED"
+                android:resource="@xml/nfc_tech_filter" />
+
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/com.mobilis.android.nfc" />
+            </intent-filter>
+        </activity>
+
+        <!-- QR Code purchase Activity -->
+        <activity
+            android:name="com.mobilis.android.nfc.activities.TagPurchaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashScreenTheme"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mmwallet.com"
+                    android:scheme="mobilis" />
+            </intent-filter>
+        </activity>
+
+        <!-- QR Code registration Activity -->
+        <activity
+            android:name="com.mobilis.android.nfc.activities.RegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MMWallet" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mmwallet.registration.com"
+                    android:scheme="mobilis" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.mobilis.android.nfc.activities.CustomerRegistrationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.VariableC2MPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Dialog" >
+        </activity>
+        <!-- Activities -->
+        <activity
+            android:name=".activities.ApplicationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize"/>
+
+        <activity
+            android:name="com.mobilis.android.nfc.activities.DeviceListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.mobilis.android.nfc.activities.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.mobilis.android.nfc.activities.ChangePinActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name="net.hockeyapp.android.UpdateActivity" />
+        <activity
+            android:name="net.hockeyapp.android.FeedbackActivity"
+            android:label="Feedback"
+            android:theme="@android:style/Theme.Black" />
+        <!-- <activity android:name="com.mobilis.android.nfc.widget.AndroidToAndroidNFCActivity"/> -->
+        <!-- <activity android:name="com.mobilis.android.nfc.activities.SMSDialogActivity" android:theme="@style/Theme.Sherlock.Light.NoActionBar"/> -->
+
+    </application>
+
+</manifest>

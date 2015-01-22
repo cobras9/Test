@@ -1,0 +1,137 @@
+apply plugin: 'android'
+
+dependencies {
+    compile 'com.android.support:support-v13:21.0.3'
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.android.support:support-v4:19.1.0'
+//    compile project(':Android MMWallet:android')
+    //    compile project(':Android MMWallet:library')
+    compile 'com.android.support:support-v4:+'
+    compile files('libs/android-support-v4.jar')
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+    }
+
+    dexOptions {
+        preDexLibraries = false
+    }
+
+    // Prevent UNEXPECTED TOP-LEVEL EXCEPTION
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src/main']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        ghanaStaging {
+            res.srcDirs = ['src/ghanaStaging/res', 'src/airtelMain/res']
+        }
+
+        airtelStaging {
+            res.srcDirs = ['src/airtelStaging/res', 'src/airtelMain/res']
+        }
+
+//        teasyStaging{
+//            java.srcDirs = ['src/teasyStaging/java/com/mobilis/android/nfc/activities/LoginActivity']
+//        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        androidTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    allprojects {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
+
+    // Create signing for app
+    signingConfigs  {
+        unsigned{
+            storePassword = ""
+            keyAlias = ""
+            keyPassword = ""
+        }
+        signed{
+            storePassword = "TO_BE_ADDED"
+            keyAlias = "TO_BE_ADDED"
+            keyPassword = "TO_BE_ADDED"
+        }
+    }
+
+
+    // Different environments for production and staging
+    productFlavors {
+
+        mobilisDemo {
+            applicationId = "com.mobilis.demo"
+        }
+        teasyProduction {
+            applicationId = "com.mobilis.teasy.production"
+        }
+        teasyStaging {
+            applicationId = "com.mobilis.teasy.test.staging"
+        }
+        airtelStaging {
+            applicationId = "com.verifonemobilemoney.airtel.staging"
+        }
+        ghanaStaging {
+            applicationId = "com.verifonemobilemoney.ghana.staging"
+        }
+        assotelStaging {
+            applicationId = "com.verifonemobilemoney.assotel.staging"
+        }
+        telkomStaging {
+            applicationId = "com.verifonemobilemoney.telkom.demo.staging"
+        }
+        ezLinkStaging {
+            applicationId = "com.verifonemobilemoney.ezlink.vfmm.staging"
+        }
+    }
+
+
+    // Config for debug and release
+    buildTypes {
+
+        debug {
+            debuggable true
+        }
+
+        release {
+            debuggable false
+            signingConfig signingConfigs.unsigned
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        showAll true
+    }
+
+}

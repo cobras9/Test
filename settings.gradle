@@ -1,0 +1,4 @@
+include ':MMWalletAndroid'
+//include ':Android MMWallet:android-zoom-view'
+//include ':Android MMWallet:android'
+include ':Android MMWallet:HockeySDK-Android-3.0.1'

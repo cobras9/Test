@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mobilisDemo.android.nfc.activities.ApplicationActivity$PlaceholderFragment"
+    android:background="@color/APP_MAIN_COLOR">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fragment_SendMoneyList_ListView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

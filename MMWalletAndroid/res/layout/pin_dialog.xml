@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/APP_MAIN_COLOR">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/background_send_money_linear">
+        <EditText
+            android:id="@+id/Dialog_PIN_EditText_PIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:inputType="numberPassword"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/Dialog_PIN_TextView_PIN"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/hintMerchantPin"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+</LinearLayout>

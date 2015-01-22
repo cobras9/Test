@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:background="@android:color/black"
+android:clickable="true"
+android:orientation="vertical"
+android:paddingLeft="0dp"
+tools:context=".TransactionHistoryActivity" >
+
+	<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="0dp"
+	android:layout_weight="1"
+	android:gravity="center_vertical"
+	android:orientation="horizontal" 
+	android:background="@color/txl_history_layout_background_color">
+
+			<TextView
+			android:id="@+id/historyTimeTV"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingLeft="15dp"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/txl_history_time_text_color"
+			android:gravity="center_vertical"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:background="@android:color/transparent"
+			android:layout_marginTop="7dp"
+			android:layout_marginBottom="7dp"
+			android:typeface="monospace"/>
+
+<!-- 	 	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1.2"
+		>
+			<TextView
+			android:id="@+id/historyToFromAccountTV"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/txl_history_fromToAccount_text_color"
+			android:text="64210513109"
+			android:gravity="center_vertical"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:background="@color/transparent" />
+		</LinearLayout>
+   		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="0.80"
+		android:gravity="right"
+		>
+			<TextView
+			android:id="@+id/historyAmountTV"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/txl_history_amount_text_color"
+			android:text="99999.99"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:gravity="right|center_vertical"
+			android:background="@color/transparent"
+			android:layout_marginRight="5dp"/>
+		</LinearLayout>
+   		<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="0dip"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:layout_gravity="right"
+		>
+			<TextView
+			android:id="@+id/historyPaymentTypeTV"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical|right"
+			android:textColor="@color/txl_history_paymentType_text_color"
+			android:text="Giving Cash out"
+			android:gravity="center_vertical"
+			android:layout_marginRight="15dp"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:background="@color/transparent" 
+			android:ellipsize="start"
+			android:layout_marginLeft="5dp"/>
+ 		</LinearLayout>
+ 		 -->
+	</LinearLayout>
+
+</LinearLayout>

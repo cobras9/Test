@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!--  This is Mobilis port-->
+<string name="SERVER_IP">10.0.0.62</string>
+<string name="SERVER_PORT">2993</string>
+    <!--  This is For testing Crash Report-->
+    <!--<string name="SERVER__PORT">2991</string>-->
+    <string name="DEFAULT_CURRENCY">NZD</string>
+
+<integer name="APP_VERSION_CODE">59</integer>
+<string name="APP_VERSION_INTERNAL">1.1.59</string>
+    <!-- The title of the NFC tag application -->
+  	    <!-- The title for the activity that shows a tag that was just scanned -->
+    <string name="title_scanned_tag">New tag collected</string>
+    <string name="actionBarTitle">&#160; Mobile Money Wallet</string>
+
+    <string name="NDEF_WorkingMount">WorkingAmount</string>
+    <string name="NDEF_TerminalId">fromTerminalId</string>
+    <string name="NDEF_ClientId">fromClientId</string>
+    <string name="NDEF_ClientPin">fromClientPin</string>
+    
+    <string name="Menu_Settings">Settings</string>
+    <string name="OK">OK</string>
+    <string name="anim_scale">Scale</string>
+ 	<string name="ALERT_NO_TXL_IN_DB">No records of transaction Ids exist..click OK to set up one</string>
+ 	<string name="ACTION_BAR_SCAN">QR Scanner</string>
+ 	<string name="ACTION_TOGGLE">Open menu</string>
+ 	<string name="TOAST_ERROR_OCCURED">Error occurred: \n \n</string>
+	<string name="TOAST_NFC_DISABLED_MSG">Please activate NFC and press Back to return to the application!</string>
+	<string name="TOAST_CUST_CONF_MSG">Please wait while customer confirms transaction on their Phone....</string>
+	<string name="TOAST_TXL_SUCCESS">Transaction Accepted</string>
+	<string name="TOAST_TXL_GETLASTTXL">Error occurred in network communication..attempting to verify last transaction</string>
+	<string name="TOAST_TXL_EXCEPTION">Network got dropped before connecting to server..please try again</string>
+	<string name="TOAST_TXL_INITIALVALUE">Can\'t establish connection with server. please try again</string>
+	<string name="TOAST_TXL_FAILED"></string>
+	<string name="TOAST_TXL_CHANGEPIN_OK">Pin\'s been changed successfully</string>
+	<string name="TOAST_LOGIN_REQ_FAILURE">Can\'t establish connection with server..please try again</string>
+	<string name="TOAST_LOGIN_RESPONSE_FAILURE">Can not reach the server..please try again</string>
+	<string name="TOAST_LASTTXL_FAILED">Couldn\'t verify last transaction</string> 
+	<string name="TOAST_LASTTXL_FAILED_NONETWORK">Unable to determine last transaction status - No Connectivity..please check phone settings</string>
+	<string name="TOAST_NO_NETWORK">No Connectivity..please check phone settings</string>
+	<string name="TOAST_SOCKET_TIMEOUT">No response from server..please try again</string>
+    <string name="TOAST_PIN_DO_NOT_MATCH">PINS DO NOT MATCH. TRY AGAIN</string>
+ 	 
+	<string name="availableBalance">Available \nbalance</string>
+	<string name="topupBalanceLabel">Topup \nBalance</string>
+	<string name="labelMerchant">MERCHANT: </string>
+	<string name="labelMerchantPayment">Key in amount to pay: </string>
+    <string name="labelLastTxlSearch">or</string>
+    <string name="buttonLastTxl">Last transaction status</string>
+    <string name="MENU_OPTION_1">Settings</string>
+	<string name="ServerIPLabel">Server IP</string>
+	<string name="ServerPortLabel">Server Port</string>
+	<string name="lastTxlLabel">Last Transaction: </string>
+	<string name="labelBalance">Balance</string>
+	<string name="labelBalanceTopup">Topup \nBalance</string>
+	<string name="logoDescription">Logo Image</string>
+	
+	<string name="buttonChangePIN">Submit</string>
+	<string name="labelOldPIN">Enter Old PIN: </string>
+	<string name="labelNewPin">Enter New PIN: </string>
+    <string name="mystore_password">blah</string>
+    <string name="tag_text">Text</string>
+	<string name="list">list</string>
+    <string name="sep_height">10dp</string>
+    <string name="BillPayment_Label">BILL PAYEES: </string>
+	<string name="labelMerchantBody">Key in Bill Amount to Pay </string>
+	<string name="labelMoneySep"> .</string>  
+	<string name="labelPaymentMethod">Choose Payment Method</string>
+	<string name="radioButtonCash">Cash</string>
+	<string name="radioButtonMobileMoney">   MobileMoney</string>
+	<string name="labelTransactionSummery">Transaction Summery</string>
+	<string name="labelTransactionType">Type: </string>
+	<string name="labelTransactionOption">Option: </string>
+	<string name="labelTransactionAmount">Amount: </string>
+	<string name="labelTransactionMethod">Method: </string>
+	<string name="buttonProcessTransaction">Process Transaction</string>
+    <string name="ButtonRefresh">Refresh</string>
+	
+	<string name="alertDialogReadNFC">Tap phone to pay:</string>
+	<string name="alertDialogReadNFCSellTopup">Tap phone to top up:</string>
+	<string name="alertDialogReadNFCDeposit">Tap phone to deposit:</string>
+	<string name="alertDialogReadNFCMakePayment">Tap phone to make payment:</string>
+	
+	<string name="labelNewTxlId">New Transaction ID</string>
+	<string name="labelMerchantLogin">Merchant ID</string>
+	<string name="labelMerchantPin">Merchant PIN</string>
+	<string name="hintEditTextTransactionId">Enter transaction ID</string>
+	<string name="hintMerchantPin">Enter PIN</string>
+	<string name="hintMerchantPinOld">Enter old PIN</string>
+	<string name="hintMerchantPinNew">Enter new PIN</string>
+	<string name="hintMerchantPinNewConfirmation">Confirm new PIN</string>
+	<string name="hintMerchantId">User ID</string>
+	<string name="hintServerIP">---.---.---.---</string>
+	<string name="hintServerPORT">----</string>
+	<string name="hintMoney">00.00</string>
+	<string name="transaction">Transaction</string>
+	<string name="transactionId">Transaction ID: </string>
+
+    <string name="txt_billpayment_title">Bill Payment</string>
+    <string name="txt_billpayment_pay">Pay</string>
+
+	<string name="MERCHANT_ACCOUNT">Account</string>
+	<string name="CHECK_LAST_TXN">Check Last Txn</string>
+	<string name="RECEIVE_PAYMENT">Receive Payment</string>
+    <string name="RECEIVE_CASH_IN_CC">Credit Card Cash In</string>
+    <string name="CASH_OUT_VOUCHER">Cash Out Voucher</string>
+    <string name="REGISTRATION">Registration</string>
+	<string name="SELL_TOPUP">Sell Topup</string>
+	<string name="GIVE_CASH_OUT">Give Cash Out</string>
+	<string name="MAKE_PAYMENT">Make Payment</string>
+	<string name="RECEIVE_CASH_IN">Receive Cash In</string>
+	<string name="CHANGE_PIN">Change PIN</string>
+	<string name="TOP_UP">Top up</string>
+	<string name="SEARCH_TXL">Search Transactions</string>
+	<string name="CONFIG_SERVER">Server Configuration</string>
+	<string name="SELECT_CURRENCY">Select Currency</string>
+	<string name="GET_BALANCE">Balance</string>
+	<string name="CLIENT_ID">merchantId</string>
+	<string name="TERMINAL_ID">terminalId</string>
+	<string name="CLIENT_PIN">merchantPin</string>
+	<string name="PROFILE_MenuB">MWalletMenu</string>
+	<string name="PROFILE_MenuC">MerchantMenu</string>
+	<string name="TECH_NDEF">NdeF</string> 
+	<string name="TECH_NDEFORMATABLE">"NdefFormatable</string> 
+	<string name="TECH_ISODEP">IsoDep</string> 
+	<string name="TECH_MIFARECLASSIC">MifareClassic</string> 
+	<string name="TECH_MIFAREULTRALIGHT">MifareUltralight</string> 
+	<string name="TECH_NFCA">"NfcA</string> 
+	<string name="TECH_NFCB">"NfcB</string> 
+	<string name="TECH_NFCF">"NdeF</string> 
+	<string name="TECH_NFCV">"NfcV</string>
+    <string name="SELL_VOUCHER">Sell EVD</string>
+    <string name="CASH_IN_VOUCHER">EVD Transfer</string>
+    <string name="BUY_VOUCHER">Buy EVD</string>
+    <string name="BUY_BULK_VOUCHER">Buy Bulk EVD</string>
+    <string name="GENERATE_TOKEN">Generate Token</string>
+
+    <string name="REG_SERVICES">Registration Services</string>
+    <string name="REG_SERVICES_CUSTOMER">Customer</string>
+    <string name="REG_SERVICES_NEW">New</string>
+    <string name="REG_SERVICES_EXISTING">Existing</string>
+    <string name="REG_SERVICES_TAGS">Tags</string>
+    <string name="REG_SERVICES_TAGS_PRIMARY">Primary</string>
+    <string name="REG_SERVICES_TAGS_SECONDARY">Secondary</string>
+    <string name="REG_SERVICES_TAGS_REPLACE">Replace</string>
+    <string name="REG_SERVICES_ADDITIONAL">Additional F/Prints</string>
+    <string name="REG_SERVICES_CUSTOMER_DETAILS">Customer Details</string>
+    <string name="REG_SERVICES_NEW_STEP_ONE">Customer Details</string>
+    <string name="REG_SERVICES_NEW_STEP_TWO">Address</string>
+    <string name="REG_SERVICES_NEW_STEP_THREE">Identification</string>
+
+	<string name="TRANSACTION_OPTION">"transactionOption</string> 
+	<string name="STATUS">Status</string>
+	<string name="TRANSACTIONID_BASE">000000000001</string>
+	<string name="STRING_ZERO_SPACE">"</string>
+	<string name="ZERO_STRING">"0</string>
+	<string name="RESPONSE_MESSAGE">"Message=</string>
+	<string name="PAYMENT_TYPE_MERCHANTPAYMENT">C2MP</string>
+	<string name="PAYMENT_TYPE_SELLTOPUP">C2MT</string>
+	<string name="PAYMENT_TYPE_SENDTOPUP">M2CR</string>
+	<string name="PAYMENT_TYPE_DEPOSIT">C2MD</string>
+	<string name="PAYMENT_TYPE_WITHDRAW">C2MW</string>
+	<string name="PAYMENT_TYPE_TAGVIEWER">C2MP</string>
+    <string name="PAYMENT_TYPE_C2MP">C2MP</string>
+    <string name="TAG_REGISTRATION">Tag Registration</string>
+    <string name="PAYMENT_TYPE_BANK">C2CW</string>
+    <string name="PAYMENT_TYPE_OUTTXF">OUTTXF</string>
+    <string name="PAYMENT_TYPE_EVD">EVD</string>
+    <string name="PAYMENT_TYPE_OTHER_OPERATORS">C2CA</string>
+    <string name="Drawer_BillPayments">Bill Payments</string>
+
+
+	<string name="EQUAL">=</string>
+	<string name="COMMA">,</string>
+	<string name="MENU_NOT_FOUND">MenuNotFound</string>
+	<string name="MENU_B">MenuB=</string>
+	<string name="MENU_C">MenuC=</string>
+	<string name="MENU_G">MenuG=</string>
+    <string name="MENU_F">MenuF=</string>
+    <string name="MENU_D">MenuD=</string>
+	<string name="DELIMITER">,</string>
+	<string name="NEWLINE_ENDLINE_CHAR">[\n\r]</string>
+	<string name="NEWLINE_CHAR">\n</string>
+	<string name="TOAST_NFCREAD_MSG">Tap Phone to Pay </string>
+	<string name="TOAST_LOGGING_MSG">Logging&#8230;</string>
+
+	<string name="MESSAGE_TYPE_DUPLICATE_TXL">Duplicate Transaction</string>
+
+	<string name="REQ_MESSAGE_TYPE">MessageType</string>
+	<string name="REQ_MESSAGE_TYPE_LASTTRANSACTIONS">LastTransactions</string>
+	<string name="REQ_MESSAGE_TYPE_MLOGIN">CustomerLogin</string>
+	<string name="REQ_OS_ANDROID">android</string>
+	<string name="REQ_MESSAGE_TYPE_REGISTERTAG">RegisterTag</string>
+	<string name="REQ_MESSAGE_TYPE_CUSTOMERTRANSACTION">CustomerTransaction</string>
+	<string name="REQ_MESSAGE_TYPE_MERCHANTTRANSACTION">MerchantTransaction</string>
+    <string name="REQ_MESSAGE_TYPE_EXCHANGE_QUOTATION">ExchangeQuotation</string>
+    <string name="REQ_MESSAGE_TYPE_EVD">EvdTransaction</string>
+    <string name="REQ_MESSAGE_TYPE_REMMITANCE_SEND">RemittanceSend</string>
+    <string name="REQ_MESSAGE_TYPE_REMMITANCE_CLAIM">RemittanceClaim</string>
+	<string name="REQ_MESSAGE_TYPE_M2CR">M2CR</string>
+	<string name="REQ_MESSAGE_TYPE_TRANSFER">Transfer</string>
+	<string name="REQ_MESSAGE_TYPE_TRANSFERCODESGET">TRANSFERCODESGET</string>
+    <string name="REQ_MESSAGE_TYPE_EVOUCHERGET">EVOUCHERGET</string>
+	<string name="REQ_MESSAGE_TYPE_TXLSEARCHT">TransactionSearch</string> 
+	<string name="REQ_MESSAGE_TYPE_GETBALANCE">BalanceGet</string>
+	<string name="REQ_MESSAGE_TYPE_SEARCHTXL">TransactionSearch</string>
+	<string name="REQ_MESSAGE_TYPE_CHANGEPIN">ChangeMerchantPin</string>
+    <string name="REQ_MESSAGE_TYPE_CUSTOMER_SEARCH">CustomerSearch</string>
+    <string name="REQ_MESSAGE_TYPE_CUSTOMER_UPDATE">CustomerUpdate</string>
+    <string name="REQ_MESSAGE_TYPE_CUSTOMER_ADDITIONAL_DATA">CustomerAdditionalData</string>
+    <string name="REQ_MESSAGE_TYPE_CRASH_REPORT">CrashReport</string>
+    <string name="REQ_MESSAGE_TYPE_GENERATE_TOKEN">TokenTransaction</string>
+
+
+    <string name="REQ_SOURCE_CURRENCY">SourceCurrency</string>
+    <string name="REQ_CHANNEL">Channel</string>
+    <string name="MPOS">MPOS</string>
+
+    <string name="REQ_PAYMENTTYPE">PaymentType</string>
+	<string name="REQ_BILLPAYEE_REFERENCE">BillPayeeReference</string>
+	<string name="REQ_DESTINATION">Destination</string>
+	<string name="REQ_DESTINATION_CODE">DestinationCode</string>
+	<string name="REQ_ORIGINCODE">OriginCode</string>
+	<string name="REQ_BILLPAYEE_ID">BillPayeeID</string>
+	<string name="REQ_TRANSACTION_TYPE">TRANSACTIONTYPE</string>
+	<string name="REQ_SMARTPHONE">Smartphone</string>
+
+    <string name="REQ_ORIGINCODE_VALUE">VFMM</string>
+    <string name="REQ_DESTINATIONCODE_VFMM_VALUE">VFMM</string>
+
+    <string name="REQ_C2CW">C2CW</string>
+	<string name="REQ_BDST">BDST</string> <!-- BUTI, BWAT (currently water not set up) -->
+    <string name="REQ_BUTI">BUTI</string>
+	<string name="REQ_C2CA">C2CA</string>
+    <string name="REQ_C2CT">C2ET</string>
+	
+	<string name="REQ_TERMINAL_ID">TerminalId</string>
+	<string name="REQ_BALANCE_TYPE">BalanceType</string>
+	<string name="REQ_CUSTOMER">CUSTOMER</string>
+	<string name="REQ_CLIENT_PIN">MerchantPin</string>
+	<string name="REQ_PRN_DSP_FORMAT">PrnDspFormat</string>
+	<string name="REQ_REQUES_TBLOCK">RequestBlock</string>
+	<string name="REQ_TXN_HISTORY_COUNT">TxnHistoryCount</string>
+	<string name="REQ_CUSTOMER_PIN">CustomerPin</string>
+	<string name="REQ_CLIENT_NEWPIN">NewPin</string>
+	<string name="REQ_CLIENT_ID">MerchantId</string>
+	<string name="REQ_TAG_DATA">TagData</string>
+	<string name="REQ_CUSTOMER_ID">CustomerId</string>
+	<string name="REQ_TXL_SEARCH_DATA">TransactionSearchData</string>
+	<string name="REQ_TRANSACTION_ID">"TransactionId</string>
+	<string name="REQ_APP">App</string>
+	<string name="REQ_OS">OS</string>
+	<string name="REQ_APP_IR">MWallet</string>
+	<string name="REQ_PAYMENT_TYPE">PaymentType</string>
+	<string name="REQ_WORKING_CURRENCY">WorkingCurrency</string>
+    <string name="REQ_DESTINATION_CURRENCY">DestinationCurrency</string>
+
+    <string name="REQ_ISSUER">Issuer</string>
+    <string name="REQ_DENOMINATION">Denomination</string>
+    <string name="REQ_QUANTITY">Quantity</string>
+
+    <string name="REQ_WORKING_AMOUNT">WorkingAmount</string>
+	<string name="REQ_CUST_SEARCH_DATA">CustomerSearchData</string>
+	<string name="REQ_RECEPIENT_DATA">RecipientData</string>
+	<string name="REQ_CUST_DATA">CustomerData</string>
+    <string name="REQ_ID_VERIFIED">IdVerified</string>
+    <string name="REQ_ID_NUMBER">IdNumber</string>
+    <string name="REQ_ID_TYPE">IdType</string>
+	<string name="REQ_CUST_ID">CustomerId</string>
+	<string name="REQ_IMIS">IMIS</string>
+	<string name="REQ_ITEM">Item</string>
+	<string name="REQ_TAG">TagData</string>
+	<string name="REQ_TAGTYPE">TagType</string>
+	<string name="REQ_STAFF_PIN">PaymentType</string>
+	<string name="REQ_NFCTAGID">NFCTagId</string>
+	<string name="REQ_GIVENNAME">GivenName</string>
+	<string name="REQ_SURNAME">SurName</string>
+    <string name="REQ_DOB">DOB</string>
+    <string name="REQ_IMSI">IMSI</string>
+	<string name="REQ_DESCRIPTION">Desc</string>
+	<string name="REQ_MSISDN">MSISDN</string>
+    <string name="REQ_DATE">"Date</string>
+	<string name="REQ_TIME">"Time</string>
+	<string name="REQ_MOBMONPIN">"MobMonPin</string>
+	<string name="REQ_AMOUNT">"amount</string>
+	<string name="REQ_CHECKSUM">Checksum</string>
+    <string name="REQ_CLAIM_CODE">ClaimCode</string>
+    <string name="REQ_CONTACT_PHONE">ContactPhone</string>
+    <string name="REQ_EMAIL_ADDRESS">EmailAddress</string>
+    <string name="REQ_CUSTOMER_TYPE">CustomerType</string>
+
+    <string name="REQ_ADDRESS_1">AddressLine1</string>
+    <string name="REQ_ADDRESS_2">AddressLine2</string>
+    <string name="REQ_STATE">State</string>
+    <string name="REQ_CITY">City</string>
+    <string name="REQ_COUNTRY">Country</string>
+
+    <string name="REQ_CREDIT_CARD_NUMBER">CardId</string>
+    <string name="REQ_CREDIT_CARD_EXPIRY">CardExpiry</string>
+
+    <string name="CUSTOMER_REGISTRATION">Customer Registration</string>
+    <string name="LABEL_SUBSCRIBER">SUBSCRIBER</string>
+    <string name="LABEL_AGENT">AGENT</string>
+    <string name="LABEL_SUPERAGENT">SUPERAGENT</string>
+    <string name="LABEL_MERCHANT">MERCHANT</string>
+    <string name="LABEL_MMSTAFF">MMSTAFF</string>
+    <string name="LABEL_FEE">Fee</string>
+
+    <string name="TAGTYPE_PRIMARY">PRIMARY</string>
+    <string name="TAGTYPE_SECONDARY">SECONDARY</string>
+    <string name="TAGTYPE_REPLACE">REPLACE</string>
+	
+	<string name="OPEN_BRACKET">(</string>
+	<string name="CLOSE_BRACKET">)</string>
+	<string name="COLOR_RED">#F62217</string>
+
+	<!--<string name="SERVER__IP">125.236.203.222</string>
+	<string name="SERVER__PORT">2995</string> -->
+	
+	<!--<string name="SERVER__IP">14.1.43.12</string>-->
+	<!--<string name="SERVER__PORT">2991</string> This is test Database-->
+
+<!-- 	<string name="SERVER__IP">41.220.65.177</string>
+	<string name="SERVER__PORT">2993</string> -->
+	
+	<string name="TASK_LOGIN">login</string>
+	<string name="TASK_PAYMENT">merchant_payment</string>
+	<string name="TASK_LASTTXL">lastTransaction</string>
+	 
+	<string name="HIGHT_IN_ARRAY_ADAPTER">50</string> 
+	<string name="STATUS_INITIALVALUE">-901</string>
+	<string name="STATUS_SOCKET_EXCEPTION">-902</string>
+	<string name="STATUS_CANCEL">-999</string>
+	<string name="STATUS_OK">0</string>
+	<string name="STATUS_REPEATED_TXLID">2</string>
+	<string name="STATUS_WRONG_PIN_ACCOUTN">3</string>
+	<string name="STATUS_SOCKET_TIMEOUT">-904</string>
+	<string name="STATUS_STRING_BOUNDARY_START">0</string>
+	<string name="STATUS_STRING_BOUNDARY_END">6</string>
+	<string name="STATUS_VALUE_BOUNDARY_START">7</string>
+	<string name="STATUS_VALUE_BOUNDARY_END">8</string>
+	<string name="STATUS_LENGTH">8</string>	
+	<string name="STATUS_TXL_NOT_FOUND">999</string>	
+	
+	<string name="TAG_LOGIN">Login</string>
+	<string name="TAG_MENU">MerchantMenu</string>
+	<string name="TAG_PAYMENT">MerchantPayment</string>
+	<string name="TAG_CONNTASK">ConnTask</string>
+	<string name="TAG_LASTTXL_CONNTASK">LoginTask</string>
+	
+	<string name="MwalletMenu">MenuB=</string>
+	<string name="MerchantMenu">MenuC=</string>
+	<string name="TOAST_Credentials_required">Please Login To use this feature</string>
+	<string name="TOAST_GetLast_Txl_Message">Wait..Looking up last transaction</string>
+	<string name="TOAST_ChangePin_Message">Wait..Transaction\'s in Progress</string>
+	<string name="TOAST_GetBalance_Message">Wait..Looking up balance</string>
+	<string name="TOAST_DuplicateTxl_Message">Error occurred: \n \nSupplied txl is a duplicate..please prodive a valid txl Id</string>
+	<string name="TOAST_OutOfSynch_Message">Transaction ID is out of synch with the server, Please click OK to provide a new one</string>
+	
+	<string name="DB_SERVER_IP">ServerIP</string>
+	<string name="DB_SERVER_PORT">ServerPort</string>
+	<string name="DB_TXL_GETBALANCE">Balance</string>
+	<string name="DB_TXL_CHANGEPIN">ChangePIN</string>
+	<string name="DB_TXL_LOGIN">LOGIN</string>
+	<string name="DB_TXL_PAYMENT">MerchantPayment</string>
+	<string name="DB_TXL_TXLSEARCH">TxlSearch</string>
+
+	<string name="MsisdnLabel">Enter MSISDN: </string>
+	
+	<string name="RegistrationNameLabel">Mobile Number</string>
+	<string name="RegistrationPinLabel">PIN</string>
+	<string name="RegistrationButton">Submit</string>
+    <string name="SendMoneyButton">PAY</string>
+	<string name="RegistrationError">* This field can\'t be empty</string>
+	
+	<string name="EXTRA_DATA_NFCID">nfcId</string>
+	<string name="EXTRA_DATA_PRICE">price</string>
+	<string name="EXTRA_DATA_DESC">desc</string>
+	<string name="EXTRA_DATA_EMBDEDDED_CLIENTID">clientId</string>
+	<string name="scan_bar_image_order">99</string>
+	
+	<string name="servicedesc">MMWallet HSE Service</string>
+	<string name="aiddescription">MMWallet HSE AID Service</string>
+	
+	<string name="login_textView_logingin">Logging in&#8230;</string>
+	<string name="login_textView_logingButton">Login</string>
+	<string name="login_textView_registerButton">Register</string>
+	
+	<string name="BillPayment_Cable_TV">Cable TV</string>
+	<string name="BillPayment_Water">Water</string>
+	<string name="BillPayment_Utilities">Utilities</string>
+	<string name="BillPayment_Other">Other</string>
+
+    <string name="Redeem_Claim_Code">Claim Code</string>
+	
+	<string name="BillPayment_PayeeIdText">Payee ID</string>
+	<string name="BillPayment_AmountText">Amount</string>
+	<string name="BillPayment_PayeeReferenceText">Payee reference</string>
+	
+	<string name="Drawer_MainMenu">Main Menu</string>
+	<string name="Drawer_Options">Options</string>
+	<string name="Drawer_Logout">Log out</string>
+	<string name="BillPayments">Bill Payments</string>
+	<string name="Drawer_Topup">Top up</string>
+    <string name="Drawer_Registration">Registration</string>
+	
+	<string name="Topup_SendTopup">Send Top up</string>
+	<string name="Topup_Buy_Vouchers">Buy Vouchers</string>
+	
+	<string name="Title_BillPayments">Bill Payments</string>
+	<string name="Title_Topup">Top up</string>
+	<string name="Title_SendTopup">Send Top up</string>
+	<string name="Title_MainMenu">Main Menu</string>
+	<string name="Title_Options">Options</string>
+	<string name="Title_BuyVoucher">Buy Voucher</string>
+
+    <string name="REDEEM_VOUCHER">Redeem Voucher</string>
+		
+	<string name="BuyVouchers_GivenName">Given name</string>
+	<string name="BuyVouchers_SurName">Surname</string>
+	<string name="BuyVouchers_MSISDN">MSISDN</string>
+	<string name="BuyVouchers_Amount">Amount</string>
+	<string name="BuyVouchers_Button_Pay">Submit</string>
+
+	
+	<string name="ExternalInternalTopup_RecepientNumber">Phone Number</string>
+    <string name="ExternalInternalTopup_Banks_RecepientNumber">Phone Number</string>
+	<string name="ExternalInternalTopup_Amount">Amount</string>
+	<string name="ExternalInternalTopup_Button_Pay">Pay</string>
+	<string name="ExternalInternalTopup_operator">Network</string>
+    <string name="ExternalInternalTopup_bank">Bank</string>
+
+    <string name="BankTopup_accountNumber">Bank Account</string>
+    <string name="TAB_1">ACCOUNT</string>
+    <string name="TAB_2">QUICK LINK</string>
+    <string name="TAB_3">MENU</string>
+
+    <string name="ALPHA_LEVEL_PRESSED">1</string>
+    <string name="ALPHA_LEVEL_NORMAL">0.3</string>
+    <string name="LOGIN_MSG_ENTER_PIN">ENTER SECURITY PIN</string>
+    <string name="LOGIN_MSG_REGISTER">REGISTER</string>
+    <string name="LOGIN_MSG_PHONE_NUMBER">CHANGE ID</string>
+    <string name="LOGIN_MSG_LOGIN">LOGIN</string>
+    <string name="LOGIN_MSG_CANCEL">CANCEL</string>
+
+    <string name="REGISTRATION_MSG_REGISTER">REGISTRATION</string>
+    <string name="TEXTVIEW_PHONE_NUMBER">Phone Number</string>
+    <string name="TEXTVIEW_PIN">PIN</string>
+    <string name="LOGIN_INVALID_ACCOUNT">Invalid Account or incorrect PIN</string>
+    <string name="TRY_AGAIN">Try again</string>
+    <string name="NO_INTERNET_CONNECTION">No internet connection available</string>
+    <string name="LOGGING_IN">Logging in</string>
+    <string name="DATE">DATE</string>
+    <string name="TYPE">TYPE</string>
+    <string name="OTHER_PARTY">OTHER PARTY</string>
+    <string name="AMOUNT">AMOUNT</string>
+    <string name="PAY">Pay</string>
+    <string name="TO_OPTIONAL">To: (Optional)</string>
+    <string name="BANKS">Banks</string>
+    <string name="BANK_ACCTHER_OPRUNT">Bank Account</string>
+    <string name="SELECT_BANK">Select Bank</string>
+    <string name="SELECT_ID_TYPE">Select identification type</string>
+    <string name="SELECT_CUSTOMER_TYPE">Select customer type</string>
+    <string name="SUCCESS_MSG">SUCCESSFUL</string>
+    <string name="GENERATE">Generate</string>
+
+    <string name="CUSTOMER_ID">Customer ID</string>
+    <string name="CURRENT_PIN">Current PIN</string>
+    <string name="NEW_PIN">New PIN</string>
+    <string name="CONFIRM_PIN">Confirm PIN</string>
+    <string name="LOGOUT">Logout</string>
+    <string name="ABOUT">About</string>
+    <string name="SUBMIT">Submit</string>
+    <string name="SEND_MONEY_BANKS">Send Money - Banks</string>
+    <string name="SEND_MONEY_OTHER_OPERATORS">Send Money - Other Operators</string>
+    <string name="OTHER_OPERATORS">Other Operators</string>
+    <string name="BANK_ACCOUNT">Bank Account</string>
+    <string name="SELECT_NETWORK">SELECT NETWORK</string>
+    <string name="YES">Yes</string>
+    <string name="NO">No</string>
+
+
+    <string name="ATOMIC_CUSTOMER_CREATE">AtomicCustomerCreate</string>
+    <string name="REGISTER_TAG">RegisterTag</string>
+
+    <string name="PHONE_NUMBER">Phone Number</string>
+    <string name="DIFFERENT_PHONE_NUMBER">Different Phone Number</string>
+    <string name="GET_MONEY">GET MONEY</string>
+    <string name="AMOUNT_IS_MANDATORY">Amount is mandatory field</string>
+    <string name="CONTACT_NUMBER_IS_MANDATORY">Contact Number is mandatory field</string>
+
+    <string name="MANDATORY_FIELD">Mandatory Field</string>
+    <string name="CREDIT_CARD_NUMBER">Credit Card Number</string>
+    <string name="CREDIT_CARD_EXPIRY">Credit Card Expiry (YYMM)</string>
+
+    <string name="REQ_MESSAGE_CHANNEL">CHANNEL</string>
+    <string name="AGENT">Agent</string>
+    <string name="ID_VERIFICATION_TYPE">ID Verification Type</string>
+    <string name="NOT_AVAILABLE">ID N/A</string>
+    <string name="AIRTEL">AIRTEL</string>
+    <string name="CRASH_REPORT_TEXT">It appears that the application has stopped working unexpectedly last time.\nWould you like to report the problem? </string>
+    <string name="OPERATOR_ACMANUMBER">101</string>
+    <string name="TAP_DEVICE">TAP DEVICE</string>
+
+    <string name="REQUESTS_NUM">4</string>
+    <string name="NEW_PIN_REQUIRED_MESSAGE"><u>NEW PIN IS REQUIRED</u></string>
+    <integer name="PIN_LENGTH">4</integer>
+
+    <bool name="supportExternalInternalTopup">true</bool>
+    <bool name="CASH_IN_EXCHANGE_QUOTE_ON">false</bool>
+    <bool name="PAY_PIN_REQUIRED">true</bool>
+
+    <color name="QUICKPAY_BACKGROUND">#77000000</color>
+    <color name="OFF_WHITE">#CCFFFFFF</color>
+    <color name="APP_MAIN_COLOR">#0079c1</color>
+    <color name="APP_MAIN_TEXT_COLOR">#0079c1</color>
+
+    <!--<color name="tab_normal">#ffffff</color>-->
+    <color name="TAB_NORMAL">#77000000</color>
+    <color name="TAB_PRESSED">#0079c1</color>
+
+    <color name="TAB_BACKGROUND_NORMAL">#77000000</color>
+    <color name="TAB_BACKGROUND_PRESSED">#0079c1</color>
+    <color name="TAB_SEP_TOP">#880079c1</color>
+    <color name="TEXT_NORMAL">#ffffff</color>
+    <color name="LOGIN_KEYPAD_BUTTON_TEXT_COLOR">#ffffff</color>
+
+    <color name="QUICK_PAY_PRESSED">#550079c1</color>
+    <color name="TAB_SEP_BOTTOM">#880079c1</color>
+    <color name="ACTIONBAR_THEME_COLOR">#0079c1</color>
+    <color name="BUTTON_COLOR">#0a62a7</color>
+    <color name="BUTTON_COLOR_PRESSED">#89bbe3</color>
+    <color name="TEXT_COLOR">#FFFFFF</color>
+
+    <color name="BUTTON_TEXT_COLOR">#FFFFFF</color>
+
+    <color name="CUST_REG_CELL_SHAPE_BORDER">#ffffff</color>
+    <color name="CUST_REG_CELL_SHAPE_FILL">#0094de</color>
+    <color name="CUST_REG_CELL_SHAPE_SELECTED_BORDER">#ffffff</color>
+    <color name="CUST_REG_CELL_SHAPE_SELECTED_FILL">#ffffff</color>
+
+    <color name="VARIABLE_C2MP_LINE_COLOR">#ffffff</color>
+
+    <color name="LOGIN_KEYPAD_BUTTON_NORMAL_BACKGROUND_COLOR">#0a62a7</color>
+    <color name="LOGIN_KEYPAD_BUTTON_PRESSED_BACKGROUND_COLOR">#89bbe3</color>
+
+    <color name="ACTIONBAR_TITLE_TEXT_COLOR">#ffffff</color>
+    <color name="ABOUT_TEXT_COLOR">#ffffff</color>
+
+    <color name="LOGIN_TEXT_COLOR">#FFFFFF</color>
+
+</resources>
