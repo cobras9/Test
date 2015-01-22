@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+MainScreen
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!-- Declare the contents of this Android application.  The namespace
+     attribute brings in the Android platform namespace, and the package
+     supplies a unique name for the application.  When writing your
+     own application, the package name must be changed from "com.example.*"
+     to come from a domain that you own or have control over. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobilisDemo.android.mmwallet.starhub"
+    android:versionCode="2"
+    android:versionName="StarHub"> 
+    <uses-sdk 
+        android:targetSdkVersion="18" 
+        android:minSdkVersion="12" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+     
+	<uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.acc" /> 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+	    
+	<application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MMWallet"
+        android:allowBackup="true">
+       
+		<!-- Services -->
+	    <service android:name="com.mobilisDemo.android.nfc.widget.BalanceUpdateService"></service>
+	    <!-- Widget --> 
+ 	    <receiver android:name="com.mobilisDemo.android.nfc.widget.MMWalletBalanceWidget"
+            android:label="MMWallet Quick Balance">
+        	<intent-filter>
+	       		<action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+       	   	</intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/watch_widget_provider" />
+        </receiver> 
+        <!-- Launcher Activity -->
+	    <activity  android:name="com.mobilisDemo.android.nfc.activities.SplashScreenActivity"
+            android:screenOrientation="portrait" android:theme="@style/SplashScreenTheme">
+	       	<intent-filter>
+	        	<action 	android:name="android.intent.action.MAIN" />
+	            <category 	android:name="android.intent.category.LAUNCHER" />
+	        </intent-filter> 
+	    </activity> 
+        <!-- QR Code scanner Activity -->
+  	    <activity android:name="com.google.zxing.client.android.CaptureActivity"
+              android:screenOrientation="landscape"
+              android:clearTaskOnLaunch="true"
+              android:stateNotNeeded="true"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+              android:windowSoftInputMode="stateAlwaysHidden">
+				   <intent-filter>
+				      <action android:name="com.google.zxing.client.android.SCAN"/>
+				      <category android:name="android.intent.category.DEFAULT"/>
+				    </intent-filter>
+		</activity>
+ 		<!-- NFC Activity -->
+  	    <activity android:name="com.mobilisDemo.android.nfc.activities.TagViewerActivity"
+            android:screenOrientation="portrait">
+  	    	<intent-filter>    
+		   	 	<action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+				<category android:name="android.intent.category.DEFAULT"/>
+				<data android:mimeType="application/com.mobilisDemo.android.nfc" />
+		    </intent-filter>
+		</activity>
+		<!-- QR Code purchase Activity -->
+		<activity android:name="com.mobilisDemo.android.nfc.activities.TagPurchaseActivity"
+            android:screenOrientation="portrait"
+		    android:windowSoftInputMode="adjustNothing"
+		    android:theme="@style/SplashScreenTheme">
+		    <intent-filter>
+	          	<action android:name="android.intent.action.VIEW" />
+	          	<category android:name="android.intent.category.DEFAULT" />
+	          	<category android:name="android.intent.category.BROWSABLE" />
+	          	<data android:scheme="mobilis" android:host="mmwallet.starhub.purchase" />
+        	</intent-filter>
+		</activity>
+		<!-- QR Code registration Activity -->
+		<activity android:name="com.mobilisDemo.android.nfc.activities.RegistrationActivity"
+            android:screenOrientation="portrait"
+		    android:theme="@style/Theme.MMWallet">
+		    <intent-filter>
+	          	<action android:name="android.intent.action.VIEW" />
+	          	<category android:name="android.intent.category.DEFAULT" />
+	          	<category android:name="android.intent.category.BROWSABLE" />
+	          	<data android:scheme="mobilis" android:host="mmwallet.starhub.registration" />
+        	</intent-filter>
+		</activity>
+		
+		<activity android:name="com.mobilisDemo.android.nfc.activities.GenerateQRCodeActivity"
+            android:screenOrientation="portrait" />
+		<activity android:name="com.mobilisDemo.android.nfc.fragments.SlidingContent"
+            android:screenOrientation="portrait" />
+		<activity android:name="com.mobilisDemo.android.nfc.activities.TransactionHistoryActivity"
+            android:screenOrientation="portrait" android:label="Transactions History"/>
+		<activity android:name="com.mobilisDemo.android.nfc.slidemenu.components.MerchantAccountActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.ReceivePaymentActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.listactivities.MenuActivity"
+            android:label="menu"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.SellTopupActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.ReceiveCashInActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.MakePaymentLocalActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.GiveCashOutActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.BalanceActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.ChangePINActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.LastTXLActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.TxlSearchActivity"
+            android:screenOrientation="portrait"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.NewTxlLoginActivity"
+            android:screenOrientation="portrait" android:label="loginConfiguration"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.ConfigurationActivity"
+            android:screenOrientation="portrait" android:label="configuration"/>
+		<activity android:name="com.mobilisDemo.android.nfc.activities.LogoutDialogActivity"
+            android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"
+		    android:excludeFromRecents="true"/> 
+		<activity android:name="net.hockeyapp.android.UpdateActivity" />
+		<activity android:name="net.hockeyapp.android.FeedbackActivity" android:label="Feedback" android:theme="@android:style/Theme.Black"/>
+	</application>
+    
+</manifest>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        
+    <!-- app in general -->
+	<color name="action_bar_color">#FFFFFF</color>
+	<color name="action_bar_text_color">#003050</color>
+	<color name="action_bar_borderLine_color">#003050</color>
+	<color name="main_app_color">#003050</color>
+	<color name="title_color">#003050</color>
+	
+	<color name="theme_background_gradient_start_color">#FFFFFF</color>
+	<color name="theme_background_gradient_end_color">#FFFFFF</color>
+	
+	<!-- login view -->	
+	<color name="login_flashing_logging_text_color">#003050</color>
+	<color name="login_bottom_layout_color">#003050</color>
+	<color name="login_button_border_color">#000000</color>
+	<color name="login_button_border_pressed_color">#000000</color>
+	<color name="login_button_background_color">#ffffff</color>
+	<color name="login_button_background_pressed_color">#003050</color>
+	<color name="login_button_text_color">#000000</color>
+	<color name="login_checkbox_text_color">#ffffff</color>
+	
+	<!-- home view -->
+	<color name="home_bottom_layout_color">#003050</color>
+	<color name="home_bottom_listview_item_start_color">#0fc6e9</color>
+	<color name="home_bottom_listview_item_end_color">#003050</color>
+	<color name="home_bottom_listview_item_border_color">#0fc6e9</color>
+	<color name="home_bottom_listview_item_text_color">#ffffff</color>
+	<color name="home_bottom_listview_item_background_pressed_color">#9bc3d0</color>
+	
+	<!-- wallet view -->
+	<color name="wallet_layout_color">#003050</color>
+	<color name="wallet_bottom_listview_item_start_color">#0fc6e9</color>
+	<color name="wallet_bottom_listview_item_end_color">#003050</color>
+	<color name="wallet_bottom_listview_item_border_color">#0fc6e9</color>
+	<color name="wallet_bottom_listview_item_text_color">#ffffff</color>
+	<color name="wallet_bottom_listview_item_background_pressed_color">#9bc3d0</color>
+	
+	<!-- transaction status dialog -->
+	<color name="txl_status_dialog_text_color">#ffffff</color>
+	<color name="txl_status_layout_background_color">#003050</color>
+	<color name="txl_status_button_text_color">#000000</color>
+	<color name="txl_status_button_background_color">#ffffff</color>
+	<color name="txl_status_button_background_pressed_color">#003050</color>
+	<color name="txl_status_button_border_color">#000000</color>
+	<color name="txl_status_button_border_pressed_color">#000000</color>
+	
+	<!-- Tag purchase Dialog-->
+	<color name="tagPurchase_dialog_product_text_color">#ffffff</color>
+	<color name="tagPurchase_dialog_price_text_color">#ffffff</color>
+	<color name="tagPurchase_dialog_EnterPin_text_color">#ffffff</color>
+	<color name="tagPurchase_dialog_button_background_color">#ffffff</color>
+	<color name="tagPurchase_dialog_button_border_color">#ffffff</color>
+	<color name="tagPurchase_dialog_button_pressed_background_color">#FFFFFF</color>
+	<color name="tagPurchase_dialog_button_pressed_border_color">#000000</color>
+	
+	<!-- settings view -->
+	<color name="settings_layout_color">#003050</color>
+	<color name="settings_bottom_listview_item_start_color">#0fc6e9</color>
+	<color name="settings_bottom_listview_item_end_color">#003050</color>
+	<color name="settings_bottom_listview_item_border_color">#0fc6e9</color>
+	<color name="settings_bottom_listview_item_text_color">#ffffff</color>
+	<color name="settings_bottom_listview_item_background_pressed_color">#9bc3d0</color>
+	
+	<!-- changepin view -->
+	<color name="changepin_layout_color">#003050</color>
+	<color name="changepin_submit_button_text_color">#003050</color>
+	<color name="changepin_submitbutton_background_color">#003050</color>
+	<color name="changepin_submitbutton_border_color">#000000</color>
+	
+	<!-- logout dialog -->
+	<color name="logout_layout_background_start_color">#003050</color>
+	<color name="logout_layout_background_end_color">#0fc6e9</color>
+	<color name="logout_text_color">#ffffff</color>
+
+	<!-- registration dialog -->
+	<color name="registration_layout_background_color">#ffffff</color>
+	<color name="registration_register_button_background_color">#003050</color>
+	<color name="registration_register_button_text_color">#ffffff</color>
+	
+	<!-- wallet's navigation menu -->
+	<color name="nav_menu_layout_background_color">#404040</color>
+	<color name="nav_menu_text_color">#ffffff</color>
+	<color name="nav_menu_listview_divider_color">#404040</color>
+	<color name="nav_menu_listview_background_color">#888888</color>
+	<color name="nav_menu_listview_item_chosen_color">#202020</color>
+	
+	<!-- Transactions history -->
+	<color name="txl_history_layout_background_color">#ffffff</color>
+	<color name="txl_history_time_text_color">#000000</color>
+	<color name="txl_history_fromToAccount_text_color">#000000</color>
+	<color name="txl_history_amount_text_color">#000000</color>
+	<color name="txl_history_paymentType_text_color">#000000</color>
+	
+    <!-- receive payment view -->
+	<color name="receivepayment_layout_background_color">#ffffff</color>
+	<color name="receivepayment_title_text_color">#003050</color>
+	
+	<!-- make payment view -->
+	<color name="makepayment_layout_background_color">#ffffff</color>
+	<color name="makepayment_title_text_color">#003050</color>
+	
+	<!-- receive cash in view -->
+	<color name="receivecashin_layout_background_color">#ffffff</color>
+	<color name="receivecashin_title_text_color">#003050</color>
+	
+	<!-- give cash out view -->
+	<color name="givecashout_layout_background_color">#ffffff</color>
+	<color name="givecashout_title_text_color">#003050</color>
+	
+	<!-- widget -->
+	<color name="widget_text_color">#003050</color>
+	<color name="widget_lastupdate_layout_color">#ffffff</color>
+
+	<!-- NFC ReceivePayment dialog -->
+	<color name="nfc_transfere_amount_dialog">#003050</color>
+	<color name="nfc_transfere_all_texts_color">#ffffff</color>
+	
+	<!-- circular progress dialog -->
+	<color name="circular_progress_dialog_color">#0fc6e9</color>
+	<color name="circular_progress_dialog_center_color">#ffffff</color>
+	
+	<!-- Bill Paymtns-->
+	<color name="billpayments_layout_color">#FFFFFF</color>
+	<color name="billpayments_title_color">#003050</color>
+	<color name="billpayments_spinner_background">#eff2f5</color>
+	<color name="billpayments_spinner_text">#000000</color>
+	
+	<!-- Top up-->
+	<color name="topup_layout_color">#003050</color>
+	<color name="buyvoucher_layout_background_color">#ffffff</color>
+	<color name="buyvoucher_title_text_color">#003050</color>
+	
+	<!-- Options -->
+	<color name="Options_layout_color">#003050</color>
+	
+</resources>

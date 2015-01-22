@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mobilis.android.nfc.util.LockableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Activity_Login_ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/Login_RelativeLayout_Logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/LOGIN_MSG_ENTER_PIN"
+                android:textColor="@color/LOGIN_TEXT_COLOR"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/activity_login_all_pins"
+                    android:layout_width="190dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="@color/LOGIN_TEXT_COLOR"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:inputType="numberPassword"
+                    android:enabled="false" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/Activity_Login_LinearLayout_Keypad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_ProgressBar"
+                    android:layout_width="260dp"
+                    android:layout_height="305dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:text="@string/LOGGING_IN"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/server_response_text_size" />
+
+                    <ProgressBar
+                        android:id="@+id/Activity_Login_ProgressBar_Logging"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Activity_Login_LinearLayout_MerchantIdBox"
+                    android:layout_width="260dp"
+                    android:layout_height="305dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/background_send_money_linear"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/Activity_Login_EditText_MerchantId"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="10dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/Activity_Login_TextView_MerchantId"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="ACCOUNT ID"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/Activity_Login_Button_SubmitMerchantId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/error_button_background"
+                        android:text="@string/SUBMIT"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <ProgressBar
+                        android:id="@+id/Activity_Login_ProgressBar_MerchantId"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Activity_Login_LinearLayout_ErrorBox"
+                    android:layout_width="260dp"
+                    android:layout_height="305dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/Activity_Login_TextView_ErrorBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        android:gravity="center"
+                        android:maxLines="10"
+                        android:text="@string/LOGIN_INVALID_ACCOUNT"
+                        android:textColor="@color/LOGIN_TEXT_COLOR"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/Activity_Login_Button_ErrorButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/error_button_background"
+                        android:text="@string/TRY_AGAIN"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/Login_TableLayout"
+                    android:layout_width="260dp"
+                    android:layout_height="305dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="visible">
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_1"
+                            android:layout_width="111dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_2"
+                            android:layout_width="111dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_3"
+                            android:layout_width="111dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_4"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_5"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="5"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_6"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="6"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_7"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_8"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="8"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_9"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="9"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/Activity_Login_Cancel"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/LOGIN_MSG_CANCEL"
+                            android:textColor="@color/LOGIN_TEXT_COLOR"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_Register"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/LOGIN_MSG_REGISTER"
+                            android:textColor="@color/LOGIN_TEXT_COLOR"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_0"
+                            android:layout_width="100dp"
+                            android:layout_height="55dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight=".9"
+                            android:background="@drawable/activity_login_button_keypad"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/LOGIN_KEYPAD_BUTTON_TEXT_COLOR"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Login"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight=".6"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/LOGIN_MSG_LOGIN"
+                            android:textColor="@color/LOGIN_TEXT_COLOR"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/Activity_Login_Button_PhoneNumber"
+                            android:layout_width="105dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight=".6"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="@string/LOGIN_MSG_PHONE_NUMBER"
+                            android:textColor="@color/LOGIN_TEXT_COLOR"
+                            android:textSize="13sp"
+                            android:textStyle="normal" />
+
+
+                    </TableRow>
+                    <!--<TableRow android:id="@+id/tableRow5"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:gravity="center_horizontal">-->
+
+                    <!--<Button android:background="@android:color/transparent" android:layout_marginRight="5dp" android:layout_marginLeft="5dp" android:textSize="16dp" android:id="@+id/Activity_Login_Button_Register" android:layout_width="100dp" android:layout_weight="1" android:layout_height="50dp" android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/LOGIN_MSG_REGISTER" android:textColor="@android:color/white" android:gravity="center" android:textStyle="normal"/>-->
+
+                    <!--</TableRow>-->
+                </TableLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.mobilis.android.nfc.util.LockableScrollView>

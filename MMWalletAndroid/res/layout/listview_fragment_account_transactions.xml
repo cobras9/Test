@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingLeft="5dp"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/ListView_Fragment_Account_TransactionDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/ListView_Fragment_Account_TransactionType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/ListView_Fragment_Account_TransactionOtherParty"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/ListView_Fragment_Account_TransactionAmount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:textColor="@color/TEXT_COLOR"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:paddingRight="5dp"
+        android:gravity="center_vertical|right"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+
+    <!--EZLink - Demo-->
+    <string name="SERVER_IP">14.1.43.12</string>
+    <string name="SERVER_PORT">2994</string>
+
+    <color name="BUTTON_COLOR">#0094de</color>
+    <color name="BUTTON_COLOR_PRESSED">#0F7FFF</color>
+
+    <color name="BUTTON_TEXT_COLOR">#ffffff</color>
+
+    <color name="OFF_WHITE">#CCFFFFFF</color>
+    <color name="APP_MAIN_COLOR">#FFFFFF</color>
+    <color name="LOGIN_SCREEN_MAIN_COLOR">#0094de</color>
+    <!--042B48-->
+    <color name="APP_MAIN_TEXT_COLOR">#0094de</color>
+    <color name="ACTIONBAR_THEME_COLOR">#FFFFFF</color>
+
+    <!--<color name="tab_normal">#ffffff</color>-->
+    <color name="TAB_NORMAL">#7702599e</color>
+    <color name="TAB_PRESSED">#ffffff</color>
+    <color name="TAB_BACKGROUND_NORMAL">#7702599e</color>
+    <color name="TAB_BACKGROUND_PRESSED">#FFFFFF</color>
+
+    <color name="TAB_SEP_TOP">#880079c1</color>
+    <color name="TEXT_NORMAL">#0094de</color>
+    <color name="QUICK_PAY_PRESSED">#550079c1</color>
+    <color name="TAB_SEP_BOTTOM">#880079c1</color>
+    <color name="TEXT_COLOR">#0094de</color>
+
+    <color name="QUICKPAY_BACKGROUND">#FFFFFF</color>
+    <color name="CUST_REG_CELL_SHAPE_BORDER">#0094de</color>
+    <color name="CUST_REG_CELL_SHAPE_FILL">#FFFFFF</color>
+    <color name="CUST_REG_CELL_SHAPE_SELECTED_BORDER">#0094de</color>
+    <color name="CUST_REG_CELL_SHAPE_SELECTED_FILL">#0094de</color>
+
+    <color name="LOGIN_KEYPAD_BUTTON_NORMAL_BACKGROUND_COLOR">#ffff90</color>
+    <color name="LOGIN_KEYPAD_BUTTON_PRESSED_BACKGROUND_COLOR">#0094de</color>
+
+    <color name="LOGIN_TEXT_COLOR">#0094de</color>
+    <color name="ACTIONBAR_TITLE_TEXT_COLOR">#0094de</color>
+
+    <string name="LABEL_SUBSCRIBER">SUBSCRIBER</string>
+    <string name="LABEL_MERCHANT">MERCHANT</string>
+    <string name="LABEL_AGENT">AGENT</string>
+    <string name="LABEL_SUPERAGENT">SUPERAGENT</string>
+    <string name="LABEL_MMSTAFF">MMSTAFF</string>
+
+</resources>

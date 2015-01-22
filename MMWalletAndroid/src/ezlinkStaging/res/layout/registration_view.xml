@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/login_background">
+
+    <TextView
+        android:id="@+id/Activity_Registration_TextView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/REGISTRATION_MSG_REGISTER"
+        android:textSize="28dp"
+        android:textStyle="normal"
+        android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:background="@android:color/transparent"/>
+
+        <FrameLayout
+            android:id="@+id/tableRow22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/Activity_Reg_EditText_PhoneNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+                android:background="@drawable/edit_text_background"
+                android:gravity="bottom"
+
+                />
+            <TextView
+                android:id="@+id/Activity_Reg_TextView_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:inputType="number"
+                android:text="@string/TEXTVIEW_PHONE_NUMBER"
+                android:background="@android:color/transparent"
+                android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+                android:gravity="center_vertical"
+                />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/Activity_Reg_EditText_PIN"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+                android:background="@drawable/edit_text_background"
+                android:gravity="center_vertical"
+                />
+            <TextView
+                android:id="@+id/Activity_Reg_TextView_PIN"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="16sp"
+                android:inputType="number"
+                android:background="@android:color/transparent"
+                android:text="@string/TEXTVIEW_PIN"
+                android:paddingLeft="10dp"
+                android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+                android:gravity="center_vertical"
+                />
+
+
+        </FrameLayout>
+
+
+        
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+              <TextView
+		        android:id="@+id/registration_errorPinTV"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/RegistrationError"
+		        android:layout_marginTop="3dp"
+		        android:textColor="@android:color/transparent"
+		        android:textSize="15sp"
+		        android:visibility="invisible"/>
+            
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+             
+            <Button
+            android:id="@+id/Activity_Reg_Button_Submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/RegistrationButton"
+            android:textColor="@color/registration_register_button_text_color"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" 
+            android:layout_weight="1"
+            android:background="@drawable/error_button_background"/>
+        </TableRow>
+        <LinearLayout
+            android:id="@+id/tableRow8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            >
+
+        <ProgressBar
+            android:id="@+id/Activity_Reg_ProgressBar"
+            android:layout_width="@dimen/progressbar_width"
+            android:layout_height="@dimen/progressbar_height"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        <TextView android:id="@+id/Activity_Reg_TextView_Result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/server_response_text_size"
+            android:maxLines="10"
+            android:textColor="@color/LOGIN_SCREEN_MAIN_COLOR"
+            android:visibility="gone"/>
+
+         </LinearLayout>
+
+        
+
+</LinearLayout>
+

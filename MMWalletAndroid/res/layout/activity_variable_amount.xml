@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="430dp"
+    android:background="@drawable/customer_creation_background"
+    android:id="@+id/Activity_VariableAmount_LinearLayout_RootView">
+
+    <LinearLayout
+        android:id="@+id/Activity_VariableAmount_LinearLayout_ButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/Activity_VariableAmount_Button_Edit"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:textColor="@color/TEXT_COLOR"
+            android:text="EDIT"
+            android:gravity="center"
+            android:background="@drawable/error_button_background"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Activity_VariableAmount_LinearLayout_TextContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Activity_VariableAmount_RelativeView_AmountPanel"
+            android:orientation="vertical"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            android:visibility="gone"
+            android:background="@drawable/background_send_money_linear">
+            <EditText
+                android:id="@+id/Activity_VariableAmount_EditText_Amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:inputType="numberDecimal"
+                android:gravity="center"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/Activity_VariableAmount_TextView_AmountMask"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Amount"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:background="@android:color/transparent"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Activity_VariableAmount_TextView_Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="500"
+            android:textStyle="bold"
+            android:textColor="@color/TEXT_NORMAL"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/Activity_VariableAmount_Progressbar"
+        android:layout_width="@dimen/progressbar_width"
+        android:layout_height="@dimen/progressbar_height"
+        android:layout_marginBottom="30dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+
+        />
+
+    <TextView
+        android:id="@+id/Activity_VariableAmount_TextView_ResultTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:maxLines="10"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="TAP DEVICE"
+        android:textStyle="bold"
+        android:textColor="@color/TEXT_NORMAL"/>
+
+</RelativeLayout>

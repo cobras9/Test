@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Dialog_NewPin_ScrollView"
+        android:background="@color/APP_MAIN_COLOR">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent">
+
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:background="@drawable/background_send_money_linear">
+                <EditText
+                    android:id="@+id/Dialog_NewPin_EditText_NewPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:inputType="numberPassword"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/Dialog_NewPin_TextView_NewPin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Enter new PIN"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:gravity="center_vertical"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+
+
+            <ProgressBar
+                android:id="@+id/Dialog_NewPin_Progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="invisible"
+                android:layout_gravity="center"
+
+                />
+            <TextView android:id="@+id/Dialog_NewPin_TextView_Result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:textSize="@dimen/server_response_text_size"
+                android:maxLines="10"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@color/TEXT_COLOR"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

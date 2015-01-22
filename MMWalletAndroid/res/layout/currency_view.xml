@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Fragment_ServerConfiguration_ScrollView"
+    android:background="@color/APP_MAIN_COLOR"
+    android:keepScreenOn="true"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/background_send_money_linear">
+
+            <TextView
+                android:id="@+id/Fragment_Banks_TextView_AccountId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Select Default Currency"
+                android:textColor="@android:color/darker_gray"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:background="@android:color/transparent"/>
+            <TextView
+                android:id="@+id/Fragment_DefaultCurrency_TextView_Sep"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:layout_below="@+id/Fragment_Banks_TextView_AccountId"
+                android:background="@color/TAB_SEP_TOP"/>
+            <Spinner
+                android:id="@+id/currencySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_below="@+id/Fragment_DefaultCurrency_TextView_Sep"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Fragment_DefaultCurrency_Button_Update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="UPDATE"
+            android:textColor="@android:color/white"
+            android:background="@drawable/error_button_background"/>
+
+        <ProgressBar
+            android:id="@+id/Fragment_DefaultCurrency_Progressbar"
+            android:layout_width="@dimen/progressbar_width"
+            android:layout_height="@dimen/progressbar_height"
+            android:layout_marginBottom="@dimen/margin_between_elements"
+            android:visibility="gone"
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:id="@+id/Fragment_DefaultCurrency_TextView_Result"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="6"
+            android:text="UPDATE"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/TEXT_COLOR"
+            android:background="@android:color/transparent"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

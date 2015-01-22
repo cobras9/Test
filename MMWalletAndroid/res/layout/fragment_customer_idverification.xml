@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="380dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/customer_creation_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin_between_elements"
+        android:background="@drawable/background_send_money_linear">
+        <EditText
+            android:id="@+id/Fragment_CustomerIdVerification_EditText_IdET"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:inputType="text"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:id="@+id/Fragment_CustomerIdVerification_TextView_IdTV"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/NOT_AVAILABLE"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@android:color/darker_gray"
+            android:gravity="center_vertical"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_between_elements"
+            android:layout_marginRight="@dimen/margin_between_elements"
+            android:background="@drawable/background_send_money_linear">
+
+            <TextView
+                android:id="@+id/Fragment_CustomerIdVerification_TextView_IdTitle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/SELECT_ID_TYPE"
+                android:textColor="@color/TEXT_NORMAL"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:background="@color/APP_MAIN_COLOR"/>
+
+        </RelativeLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_between_elements"
+            android:layout_marginRight="@dimen/margin_between_elements"
+            android:id="@+id/Fragment_CustomerIdVerification_Spinner"
+            android:layout_below="@+id/Fragment_CustomerIdVerification_TextView_Sep"
+            android:gravity="left"
+            android:background="@drawable/spinner_background"
+            android:layout_centerHorizontal="true" />
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_between_elements"
+            android:layout_marginRight="@dimen/margin_between_elements"
+            android:id="@+id/Fragment_CustomerIdVerification_RelativeLayout_CustomerTypeHeader"
+            android:background="@drawable/background_send_money_linear">
+
+            <TextView
+                android:id="@+id/Fragment_CustomerIdVerification_TextView_IdTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/SELECT_CUSTOMER_TYPE"
+                android:textColor="@color/TEXT_NORMAL"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:background="@color/APP_MAIN_COLOR"/>
+
+        </RelativeLayout>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_between_elements"
+            android:layout_marginLeft="@dimen/margin_between_elements"
+            android:layout_marginRight="@dimen/margin_between_elements"
+            android:id="@+id/Fragment_CustomerIdVerification_Spinner_CustomerType"
+            android:layout_below="@+id/Fragment_CustomerIdVerification_TextView_IdTitle2"
+            android:gravity="left"
+            android:background="@drawable/spinner_background"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

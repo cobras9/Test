@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!-- The title of the NFC tag application -->
+    <!-- The title for the activity that shows a tag that was just scanned -->
+
+
+    <string name="LOGIN_MSG_ENTER_PIN">Ingiza namba ya siri</string>
+    <string name="LOGIN_MSG_REGISTER">usajili</string>
+    <string name="REGISTRATION_MSG_REGISTER">usajili</string>
+    <string name="TEXTVIEW_PHONE_NUMBER">Namba ya simu</string>
+    <string name="TEXTVIEW_PIN">PIN</string>
+    <string name="LOGIN_INVALID_ACCOUNT">sio sahihi au pin ulioingiza sio sahihi</string>
+    <string name="RegistrationButton">Tuma</string>
+    <string name="TRY_AGAIN">Jaribu tena</string>
+    <string name="NO_INTERNET_CONNECTION">auna huduma ya internet</string>
+    <string name="LOGGING_IN">Ingia</string>
+
+    <string name="TAB_1">Akauti yangu</string>
+    <string name="TAB_2">QUICK LINK</string>
+    <string name="TAB_3">Menyu</string>
+
+    <string name="DATE">Tarehe</string>
+    <string name="TYPE">Aina</string>
+    <string name="OTHER_PARTY">Biashara Nyegine</string>
+    <string name="AMOUNT">Kiasi</string>
+    <string name="PAY">Kulipia</string>
+    <string name="TO_OPTIONAL">Kwenda</string>
+    <string name="RECEIVE_PAYMENT">Kupokea pesa</string>
+    <string name="GIVE_CASH_OUT">Withdraw Cash</string>
+    <string name="Drawer_BillPayments">Kulipia bili</string>
+    <string name="Title_BillPayments">Kulipia bili</string>
+    <string name="Drawer_Topup">Ongeza salio</string>
+    <string name="TOP_UP">Ongeza salio</string>
+    <string name="Title_Topup">Ongeza salio</string>
+    <string name="CHANGE_PIN">Badilisha Pin</string>
+    <string name="CONFIG_SERVER">Server Configuration</string>
+    <string name="SELECT_CURRENCY">Chagua sarafu</string>
+    <string name="OTHER_OPERATORS">Mitandao mengine</string>
+    <string name="SEND_MONEY_BANKS">Tuma pesa- Benki</string>
+    <string name="SEND_MONEY_OTHER_OPERATORS">Tume pesa kwenda mitandao mengine</string>
+    <string name="SELECT_NETWORK">chagua network</string>
+    <string name="BANK_ACCOUNT">Akauti namba ya benki</string>
+    <string name="SELECT_BANK">changua Benki</string>
+    <string name="CURRENT_PIN">Pin yako ya sasa</string>
+    <string name="NEW_PIN">Pin Mpya</string>
+    <string name="CONFIRM_PIN">Hakikisha Pin</string>
+    <string name="LOGOUT">Ondoka/kujiondoa</string>
+    <string name="ABOUT">Kuhusu</string>
+    <string name="SUBMIT">Tuma</string>
+
+    <string name="Topup_SendTopup">Send Top up</string>
+    <string name="Title_SendTopup">Send Top up</string>
+    <string name="BANKS">Benki</string>
+
+    <string name="PHONE_NUMBER">Namba Ya Simu</string>
+    <string name="GET_MONEY">Kupata Pesa</string>
+    <string name="AMOUNT_IS_MANDATORY">Sehemu Hii Ni Lazima Kuijaza</string>
+
+
+
+
+</resources>

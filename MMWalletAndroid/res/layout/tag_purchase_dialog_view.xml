@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="420dp"
+    android:minWidth="300dp"
+    android:minHeight="350dp"
+    android:orientation="vertical" 
+    android:background="@color/main_app_color">
+
+
+    <ImageView
+        android:id="@+id/loadingIV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:visibility="gone" />
+
+     <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center"
+        android:textColor="@color/tagPurchase_dialog_product_text_color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center"
+        android:textColor="@color/tagPurchase_dialog_price_text_color"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/ndefLoadingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/EnterPinTextV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textColor="@color/tagPurchase_dialog_EnterPin_text_color"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<EditText
+	    android:id="@+id/ndefPinET"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:textSize="20sp"
+	    android:textStyle="bold"
+	    android:paddingLeft="20dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:inputType="numberPassword" >
+
+	</EditText>
+    
+	<Button
+		android:id="@+id/ndefButton"
+		style="@style/RedButton"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center"
+		android:background="@drawable/tagpurchase_ok_button_background"
+		android:layout_marginTop="15dp"
+		android:layout_marginBottom="20dp"
+		android:layout_marginLeft="80dp"
+		android:layout_marginRight="80dp"
+		android:text="@string/OK" 
+		android:textColor="@android:color/black"
+		android:textSize="20sp"/>
+
+
+</LinearLayout>

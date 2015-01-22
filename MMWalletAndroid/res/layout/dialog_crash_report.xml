@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="400dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@drawable/background_crash_report">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+           
+            <TextView
+                android:id="@+id/Dialog_CrashReport_TextView_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CRASH_REPORT_TEXT"
+                android:paddingLeft="10dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"/>
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="@dimen/margin_between_elements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                >
+
+                <Button
+                    android:id="@+id/Dialog_CrashReport_Button_Yes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/YES"
+                    android:textColor="@android:color/black"/>
+                <Button
+                    android:id="@+id/Dialog_CrashReport_Button_NO"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/NO"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/Dialog_CrashReport_Button_Yes"/>
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/Dialog_CrashReport_Progressbar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+</LinearLayout>
